@@ -25,15 +25,16 @@ console.log('Test - should say "Hello, Your Name!"', helloName());
 // 3. Function to add two numbers together & return the result
 let firstNumber = 1
 let secondNumber = 2
+let thirdNumber = 3
 
-function addNumbers(firstNumber) {
+function addNumbers(firstNumber, secondNumber) {
    return firstNumber + secondNumber;
 }
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(firstNumber, secondNumber, thirdNumber) {
+  return firstNumber * secondNumber * thirdNumber;
 }
 
 

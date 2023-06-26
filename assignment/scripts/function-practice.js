@@ -45,13 +45,16 @@ function isPositive(number) {
     return true;
   }
   return false;
-}f
+}
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log('isPositive - should say true', isPositive(3));
 console.log('isPositive - should say false', isPositive(0));
 console.log('isPositive - should say false', isPositive(-3));
 
+console.log('Is 3 positive?', isPositive(3));
+console.log('Is 0 positive?', isPositive(0));
+console.log('Is -3 positive?', isPositive(-3));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.

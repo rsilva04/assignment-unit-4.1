@@ -59,14 +59,20 @@ console.log('Is -3 positive?', isPositive(-3));
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-
+  return array[array.length - 1];
 }
+console.log(getLast['array']);
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      return true;
+    }
+  }
+  return false;
 }
 
 // ----------------------
@@ -83,6 +89,7 @@ console.log('isFirstLetter - should say false', isFirstLetter('z', 'apple'));
 // 9. Function to return the sum of all numbers in an array
 function sumAll() {
   let sum = 0;
+  
   // TODO: loop to add items
 
   // TODO: return the sum
